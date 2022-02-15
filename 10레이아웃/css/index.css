@@ -109,9 +109,47 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
     color: #fff;
 }
 
-.tap-content ul li a {
+.tab-content ul li a {
+    display: block;
+    position: relative;
+    padding: 10px;
+    border-top: 1px solid #333;
+}
+.tab-content ul li:nth-child(1) a {
+    border-top: none;
+} 
+.tab-content ul li a span {
     display: block;
 }
-.tap-content ul li a span {
+
+.tab-content ul li a .thumbs {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.tab-content ul li a .content {
+    padding-left: 55px;
+}
+.tab-content ul li a .content > strong,
+.tab-content ul li a .content > p {
+    font-size: 15px;
+}
+.tab-content ul li a .content > strong {
+    font-size: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     display: block;
+    width: 125px;
+    overflow: hidden;
+}
+
+/* footer */
+footer {
+    width: 960px;
+    margin: 0 auto;
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
 }
